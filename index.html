@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Redirect</title>
+</head>
+<body>
+    <script>
+        // declare the variable
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+        let targetUrlList = ["https://www.surveycake.com/s/abWy4",
+         "https://www.surveycake.com/s/1ZY2x",
+         "https://www.surveycake.com/s/pMkKn",
+         "https://www.surveycake.com/s/nzA0Q",
+         "https://www.surveycake.com/s/zx66M",
+         "https://www.surveycake.com/s/xK11D",
+         "https://www.surveycake.com/s/wrggM",
+         "https://www.surveycake.com/s/BavPy"];
+
+        let ans = getRandomInt(100);
+        // console.log(ans);
+
+        if(ans < 13){
+            location.href = "https://www.surveycake.com/s/abWy4";
+        } 
+        else if(ans >= 13 && ans < 25){
+            location.href = "https://www.surveycake.com/s/1ZY2x";
+        }
+        else if(ans >= 25 && ans < 38){
+            location.href = "https://www.surveycake.com/s/pMkKn";
+        }
+        else if(ans >= 38 && ans < 50){
+            location.href = "https://www.surveycake.com/s/nzA0Q";
+        }
+        else if(ans >= 50 && ans < 62){
+            location.href = "https://www.surveycake.com/s/zx66M";
+        }
+        else if(ans >= 62 && ans < 75){
+            location.href = "https://www.surveycake.com/s/xK11D";
+        }
+        else if(ans >= 75 && ans < 87){
+            location.href = "https://www.surveycake.com/s/wrggM";
+        }
+        else {
+            location.href = "https://www.surveycake.com/s/BavPy";
+        }
+    </script>
+</body>
+</html>
